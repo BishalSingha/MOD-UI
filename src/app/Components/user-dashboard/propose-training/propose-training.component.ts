@@ -88,7 +88,7 @@ export class ProposeTrainingComponent implements OnInit {
     console.log(result);
     this.service.addtraining(result).subscribe(res => {
       //console.log(res);
-      this.toastr.success('Request sent successfully')
+      alert('Request sent successfully')
       //console.log('request sent successfully');
       this.router.navigate(['/user/notification'])
     })

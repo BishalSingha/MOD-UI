@@ -2,35 +2,34 @@
     <div class="container-fluid" style="height:11%;width: 100%;background-color: grey;">
         <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="top">
             <div class="container-fluid" >
-                <a class="navbar-brand" [routerLink]="['/user']" id="icon">educare.com</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <div>
-                            <button class="btn " [routerLink]="['search-results']">
-                                <span class="glyphicon glyphicon-search"></span> Search Trainings
-                            </button>
-                        </div>
-                        <li class="nav-item"  >
-                            <a class="nav-link" [routerLink]="['notification']" style="text-align: center; width: 150px;"><i class="fa fa-bell"> </i> Notification</a>
-                        </li>  
-                        <div class="dropdown">
-                            <button class="dropbtn" style="margin-right: 50px;"><i class="fa fa-align-justify" title="Align Justify"></i>  More</button>
-                            <div class="dropdown-content">
-                                <a [routerLink]="['current-trainings']">Current Training</a>
-                                <a [routerLink]="['completed-trainings']">Completed Training</a>
-                                <a [routerLink]="['profile']">Profile</a>
-                                <a (click)="logout()">Logout</a>
-                            </div>	  
-                        </div>
-                    </ul>
-                </div>
+                <a class="navbar-brand" [routerLink]="['/user']" id="icon">tutorMe</a>
             </div>      
         </nav>
     </div>
-    <div class="container-fluid" style="height:89%;width: 100%;background-color: white;">
+    <hr/>
+    <div style="height: 10%;width: 100%;text-align: center;" class="row">
+        <div class="col md 2">
+            <button class="btn " [routerLink]="['current-trainings']" style="text-align: center; width: 150px;">Current Training</button>
+        </div>
+        <div class="col md 2">
+            <button class="btn " [routerLink]="['completed-trainings']" style="text-align: center; ">Completed Training</button>
+        </div>
+        <div class="col md 2">
+            <button class="btn " [routerLink]="['profile']" style="text-align: center; width: 150px;">Profile</button>
+        </div>
+        <div class="col md 2">
+            <button class="btn " [routerLink]="['notification']" style="text-align: center; width: 150px;">Notification</button>
+        </div>
+        <div class="col md 2">
+            <button class="btn " [routerLink]="['search-results']" style="text-align: center; width: 150px;">Search Trainings</button>
+        </div>
+        <div class="col md 2">
+            <button class="btn " (click)="logout()" style="text-align: center; width: 150px;">Logout</button>
+        </div>
+
+    </div>
+    <hr/>
+    <div class="container-fluid" style="height:79%;width: 100%;background-color: white;">
         <router-outlet></router-outlet>
     </div>
 </div>

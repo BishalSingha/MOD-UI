@@ -9,8 +9,8 @@ html,body{
 }
 #home{
   width: 100%;
-  height: 100%;
-  background-image: url(/assets/images/home6.jpg);
+  height: 689px;
+  background-image: url(/assets/images/home7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -117,14 +117,13 @@ html,body{
 }
 footer{
   border: 0px;
-  padding: 0px;
+  padding: 20px;
   margin: 0px;
-  background-color: #3f3f3f;
+  background-color: grey;
   color:#d5d5d5;
   position: relative;
   bottom: 0px;
   width: 100%;
-  padding-top: 0px;
 }
 hr.light{
   border-top:1px solid #d5d5d5;
@@ -144,7 +143,6 @@ hr.light{
 }
 
 .dropbtn {
-  background-color: coral;
   color: white;
   padding: 10px;
   font-size: 16px;
@@ -191,7 +189,7 @@ hr.light{
 }
 
 .dropdown-content a:hover {
-background-color: coral;
+background-color: lightgrey;
 color:white;
 cursor: pointer;
 }

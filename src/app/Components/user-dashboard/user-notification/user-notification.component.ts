@@ -125,7 +125,7 @@ export class UserNotificationComponent implements OnInit {
       if(now > enddate)
       {
         //alert('date has expired');
-        this.toastr.success('Training date has expired');
+        alert('Training date has expired');
       }
       else
       {
@@ -133,7 +133,7 @@ export class UserNotificationComponent implements OnInit {
         {
           this.service.trainingEdit(id,result).subscribe(res => {
             //console.log('Started Successfully');
-            this.toastr.success('Training Started Successfully');
+            alert('Training Started Successfully');
             this.getTrainingByUserId();
             this.router.navigate(['/user/current-trainings']);
           });
@@ -141,7 +141,7 @@ export class UserNotificationComponent implements OnInit {
         else
         {
           //alert('Wait till the start date');
-          this.toastr.success('Wait till the start date');
+          alert('Wait till the start date');
         }
       }
       

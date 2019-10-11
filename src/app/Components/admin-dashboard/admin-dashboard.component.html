@@ -2,27 +2,31 @@
     <div class="container-fluid" style="height:11%;width: 100%;background-color: grey;">
         <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="top">
             <div class="container-fluid" >
-                <a class="navbar-brand" [routerLink]="['/index']" id="icon">educare.com</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">	        
-                        <div class="dropdown">
-                            <button class="dropbtn" style="margin-right: 50px;"><i class="fa fa-align-justify" title="Align Justify"></i>  More</button>
-                            <div class="dropdown-content">
-                                <a [routerLink]="['payments']">Payments</a>
-                                <a [routerLink]="['add-remove-technologies']">Add/Remove Technolgy</a>
-                                <a [routerLink]="['block-user']"> Block User</a>
-                                <a [routerLink]="['block-mentor']"> Block Mentor</a>
-                                <a>Logout</a>
-                            </div>	  
-                        </div>
-                    </ul>
-                </div>
-            </div>      
-      </nav>
-    </div> 
+                <a class="navbar-brand" [routerLink]="['/index']" id="icon">tutorMe</a>
+            </div>
+            </nav>
+    </div>
+    <hr>
+    <div style="height: 10%;width: 100%;text-align: center;" class="row">
+        <div class="col md 2">
+            <button class="btn " [routerLink]="['payments']" style="text-align: center; width: 150px;">payments</button>
+        </div>
+        <div class="col md 3">
+            <button class="btn " [routerLink]="['add-remove-technologies']" style="text-align: center; width: 200px;">Add/Remove Technolgy</button>
+        </div>
+        <div class="col md 2">
+            <button class="btn " [routerLink]="['block-user']" style="text-align: center; width: 150px;">Block User</button>
+        </div>
+        <div class="col md 2">
+            <button class="btn " [routerLink]="['block-mentor']" style="text-align: center; width: 150px;">Block mentor</button>
+        </div>
+        <div class="col md 2">
+            <button class="btn " (click)="logout()" style="text-align: center; width: 150px;">Logout</button>
+        </div>
+    </div>
+    
+
+                
     <div class="container-fluid" style="height:89%;width: 100%;background-color: white;">
         <router-outlet></router-outlet>
     </div>

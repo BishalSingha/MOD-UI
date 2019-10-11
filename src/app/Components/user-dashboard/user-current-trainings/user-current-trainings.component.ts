@@ -73,7 +73,7 @@ export class UserCurrentTrainingsComponent implements OnInit {
         console.log(result1);
         this.service.trainingEdit(id,result1).subscribe(res => {
           //console.log('success');
-          this.toastr.success('Progress Updated Successfully');
+          alert('Progress Updated Successfully');
           //console.log(res);
           this.getTrainingByUserId();
         });
@@ -100,7 +100,7 @@ export class UserCurrentTrainingsComponent implements OnInit {
         console.log(result1);
         this.service.trainingEdit(id,result2).subscribe(res => {
           //console.log('success');
-          this.toastr.success('Training Completed')
+          alert('Training Completed')
           //console.log(res);
           this.getTrainingByUserId();
         });

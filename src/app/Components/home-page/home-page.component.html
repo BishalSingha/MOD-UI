@@ -2,23 +2,14 @@
 
 	<nav class="navbar navbar-expand-md navbar-light sticky-top" id="top">
 		<div class="container-fluid">
-			<a class="navbar-brand" [routerLink]="['/index']" id="icon">educare.com</a>
+			<a class="navbar-brand" [routerLink]="['/index']" id="icon">tutorMe</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item" id="home-link">
-						<a class="nav-link">Home</a>
-					</li>
-					<li class="nav-item" id="about-link">
-						<a class="nav-link">About</a>
-					</li>
-					<li class="nav-item" id="courses-link">
-						<a class="nav-link">Courses</a>
-					</li>
-					<li class="nav-item" id="our-staff-link">
-						<a class="nav-link">Our Staff</a>
+						<a class="nav-link" [routerLink]="['/index']">Home</a>
 					</li>
 				</ul>
 				<div class="dropdown">
@@ -35,99 +26,26 @@
 	<div class="container-fluid" id="home-content">
 		<div class="row text-center">
 			<div class="col-md-12">
-				<h2 style="color:white;padding-bottom: 20px;text-shadow: 2px 2px 4px #000000;">Building A Better World
-					One Student At A Time</h2>
+				<h2 style="color:white;padding-bottom: 20px;text-shadow: 2px 2px 4px #000000;">Take the first step towards a better learning</h2>
 			</div>
 			<div class="col-md-12">
 				<h3 style="color:white;padding-bottom: 20px;text-shadow: 2px 2px 4px #000000;">Are You Ready?</h3>
 			</div>
 			<div class="col-md-12">
-				<button routerLink="/user-nologin" class="get-started-btn">Get Started</button>
+				<button [routerLink]="['/user-nologin']" class="get-started-btn">Lets Begin</button>
 			</div>
-		</div>
-	</div>
-</div>
-<div class="container-fluid" id="about">
-	<div class="row text-center padding">
-		<div class="col-md-12">
-			<h3>About Us</h3>
-		</div>
-	</div>
-	<div class="row text-center padding" id="about-content">
-		<div class="col-md-12">
-			<p>Educare offers practice exercises, instructional videos, and a personalized learning dashboard that
-				empower learners to study at their own pace in and outside of the classroom. We tackle math, science,
-				computer programming, history, art history, economics, and more. Our math missions guide learners from
-				kindergarten to calculus using state-of-the-art, adaptive technology that identifies strengths and
-				learning gaps.</p>
-			<p>We’re working hard to ensure that Educare empowers coaches of all kinds to better understand what their
-				children or students are up to and how best to help them. See at a glance whether a child or student is
-				struggling or if she hit a streak and is now far ahead of the class. Our teacher dashboard provides a
-				summary of class performance as a whole as well as detailed student profiles.</p>
-			<p>Millions of students from all over the world, each with their own unique story learn at their own pace on
-				Educare every single day. Our resources are being translated into more than 36 languages in addition to
-				the Spanish, French, and Brazilian Portuguese versions of our site.</p>
 		</div>
 	</div>
 </div>
 
-<div class="container-fluid padding" id="courses">
-	<div class="row text-center padding">
-		<div class="col-md-12">
-			<h2 id="courses-head">Courses</h2>
-		</div>
-	</div>
-	<div class="row padding" id="courses-content">
-		<div class="col-lg-12">
-			<p>Every course on Educare is taught by top instructors from the world’s best universities and educational
-				institutions. Courses include recorded video lectures, auto-graded and peer-reviewed assignments, and
-				community discussion forums. When you complete a course, you’ll receive a sharable electronic Course
-				Certificate.</p>
-		</div>
-	</div>
-</div>
-
-<div class="container-fluid padding" id="our-staff">
-	<div class="row text-center">
-		<div class="col-12">
-			<h3 style="padding-bottom: 72px;">Our Staff</h3>
-		</div>
-		<div class="col-md-4">
-			<div class="card">
-				<img src="/assets/images/team4.jpg" class="card-img-top" width="100px" height="300px">
-				<h4 class="card-title">Herbert Simon</h4>
-				<p class="card-text">Software Engineering</p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="card">
-				<img src="/assets/images/team9.jpg" class="card-img-top" width="100px" height="300px">
-				<h4 class="card-title">Elizabeth Warren</h4>
-				<p class="card-text">Big Data</p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="card">
-				<img src="/assets/images/team6.jpg" class="card-img-top" width="100px" height="300px">
-				<h4 class="card-title">Gery Becker</h4>
-				<p class="card-text">Data Science</p>
-			</div>
-		</div>
-	</div>
-</div>
 <footer>
 	<div class="container-fluid">
 		<div class="row text-center">
 			<div class="col-md-12">
-				<hr class="light">
-				<h5>Contact Us</h5>
-				<hr class="light">
-				<p>Phone : 9851324109</p>
-				<p>Email : ritikjaswal1@gmail.com</p>
-				<br>
-				<hr class="light">
-				<span>© Ritik Jaiswal All Rights Reserved</span>
-				<hr class="light">
+				
+	
+				<span>© Bishal Singha All Rights Reserved</span>
+	
 			</div>
 		</div>
 	</div>
@@ -163,7 +81,7 @@
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-12 ">
-							<button class="btn btn-lg btn-block login" [disabled]="!UserLogin.valid">Login</button>
+							<button class="btn btn-lg btn-block" [disabled]="!UserLogin.valid">Login</button>
 						</div>
 					</div>
 
@@ -205,7 +123,7 @@
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-12 ">
-							<button class="btn btn-lg btn-block login" [disabled]="!MentorLogin.valid">Login</button>
+							<button class="btn btn-lg btn-block " [disabled]="!MentorLogin.valid">Login</button>
 						</div>
 					</div>
 
@@ -246,7 +164,7 @@
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-12 ">
-							<button class="btn btn-lg btn-block login" [disabled]="!AdminLogin.valid">Login</button>
+							<button class="btn btn-lg btn-block " [disabled]="!AdminLogin.valid">Login</button>
 						</div>
 					</div>
 				</form>
@@ -337,7 +255,7 @@
 
 					<div class="form-row">
 						<div class="form-group col-md-12 ">
-							<button class="btn btn-lg btn-block login" [disabled]="!UserRegister.valid">Sign Up</button>
+							<button class="btn btn-lg btn-block " [disabled]="!UserRegister.valid">Sign Up</button>
 						</div>
 					</div>
 				</form>
@@ -454,7 +372,7 @@
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-12 ">
-							<button class="btn btn-lg btn-block login" [disabled]="!MentorRegister.valid">Sign
+							<button class="btn btn-lg btn-block " [disabled]="!MentorRegister.valid">Sign
 								Up</button>
 						</div>
 					</div>

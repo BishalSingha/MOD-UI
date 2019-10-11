@@ -52,7 +52,7 @@ export class UserProfileComponent implements OnInit {
     //console.log(result);
     this.service.userDataEdit(this.userId, result).subscribe(data => {
       //console.log('success');
-      this.toastr.success('Profile Successfully')
+      alert('Profile Successfully');
     });
     this.edit = false;
 

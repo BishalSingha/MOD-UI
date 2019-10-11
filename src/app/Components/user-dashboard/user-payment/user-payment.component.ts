@@ -66,7 +66,7 @@ export class UserPaymentComponent implements OnInit {
     console.log(result1);
     this.service.trainingEdit(this.paramId,result1).subscribe(res => {
       //console.log('success');
-      this.toastr.success('Payment Successfull')
+      alert('Payment Successfull')
       //console.log(res);
     });
     
